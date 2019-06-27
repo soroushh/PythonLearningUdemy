@@ -6,3 +6,9 @@ string_variable = "hello"
 single_quote_string = 'hello'
 
 print(string_variable)
+
+# we are defining a method. 
+def add(a,b):
+    print(a+b)
+
+add(a,b)
