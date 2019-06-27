@@ -4,3 +4,5 @@ my_variable = 10
 my_10_decimal = 15
 string_variable = "hello"
 single_quote_string = 'hello'
+
+print(string_variable)
