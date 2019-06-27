@@ -33,12 +33,20 @@
 #
 # print(tuple_list)
 
-your_lottory_numbers = {1,2,3,4,5}
+# your_lottory_numbers = {1,2,3,4,5}
+#
+# winning_numbers = {1,3,5,7,9,11}
+#
+# print(your_lottory_numbers.intersection(winning_numbers))
+#
+# print(your_lottory_numbers.union(winning_numbers))
+#
+# print(your_lottory_numbers.difference(winning_numbers))
 
-winning_numbers = {1,3,5,7,9,11}
+my_set = (100)
 
-print(your_lottory_numbers.intersection(winning_numbers))
+print(my_set)
 
-print(your_lottory_numbers.union(winning_numbers))
+set = (200,)
 
-print(your_lottory_numbers.difference(winning_numbers))
+print(set)
