@@ -4,23 +4,21 @@ class Student():
         self.school = school
 
     @classmethod
-    def friend(cls ,name , origin):
-        return cls(name , origin.school)
+    def friend(cls ,name , origin, *args, **kwargs):
+        return cls(name , origin.school, *args, **kwargs)
 
 
 
 class WorkingStudent(Student):
-    def __init__(self, name, school, salary):
+    def __init__(self, name, school, salary, job_title):
         super().__init__(name , school)
         self.salary = salary
-    @classmethod
-    def friend(cls,name, origin, salary):
-        return cls(name, origin.school,salary )
+        self.job_title = job_title
 
 anna= Student("anna", "MIT")
 
 john = anna.friend("john", anna)
 
-soroush = WorkingStudent("soroush","MIT", 200)
+soroush = WorkingStudent("soroush","MIT", 200, job_title = "softwareDeveloper")
 
-farnaz = soroush.friend("farnaz",soroush, 300)
+farnaz = soroush.friend("farnaz",soroush, 300, job_title = "Engineer")
